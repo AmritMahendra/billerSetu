@@ -28,14 +28,14 @@ router.post("/register", async (req, res) => {
 });
 
 //SETU GET ALL CUSTOMER AND THEIR BILLS HERE
-router.get("/fetch", verify, async (req, res) => {
+/*router.get("/fetch", verify, async (req, res) => {
   try {
     const customers = await Bill.find({});
     res.status(200).send(customers);
   } catch (err) {
     res.json({ message: err });
   }
-});
+});*/
 
 //SPECIFIC POST
 router.get("/fetch/:id", verify, async (req, res) => {
